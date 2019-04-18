@@ -1,0 +1,18 @@
+[package]
+name = "binpacker1d"
+version = "0.1.0"
+authors = ["Jason Rodney Hansen <jasonrodneyhansen@gmail.com>"]
+edition = "2018"
+build = "build.rs"
+
+[dependencies]
+rand = "0.6.5"
+crossbeam = "0.7.1"
+libc = "0.2"
+
+[[bin]]
+name = "optimize"
+path = "src/bin/optimize.rs"
+
+[build-dependencies]
+cbindgen = "0.8.3"
